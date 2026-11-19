@@ -1,0 +1,1 @@
+[{"txId":"5af719391278daaf9b8ffda8a8e6cdfd4c881eb4863b90d452cb71e4b512611c","runTag":"pilot-E4-partsum-p16-a1-L50-20tps-t13","strategy":"partsum","actor":"pilot-E4-partsum-p16-a1-L50-20tps-t13-a0","partition":11,"observed":0,"threshold":50,"allowed":true,"tsNanos":1794737699331000000}]

@@ -1,0 +1,5 @@
+exp,strategy,partitions,limit,trials,committed,admitted,admitted_ci95,over_admit,early_deny
+E5,deltackpt,0,50,20,200.0,200.0,0.0,150.0,0.0
+E5,deltackpt,20,50,20,192.7,57.95,1.99,7.95,0.0
+E5,deltackpt,40,50,20,195.4,78.05,0.1,28.05,0.0
+E5,deltackpt,100,50,20,194.7,99.1,0.14,49.1,0.0

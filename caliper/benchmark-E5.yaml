@@ -1,0 +1,1285 @@
+test:
+  name: bgac-contention-E5
+  workers:
+    number: 1
+  rounds:
+  - label: E5-deltackpt-p0-a1-L50-20tps-t1
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t1
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t1
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t1
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t1
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t1
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t1
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t1
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t2
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t2
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t2
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t2
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t2
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t2
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t2
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t2
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t3
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t3
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t3
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t3
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t3
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t3
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t3
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t3
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t4
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t4
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t4
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t4
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t4
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t4
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t4
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t4
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t5
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t5
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t5
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t5
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t5
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t5
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t5
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t5
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t6
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t6
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t6
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t6
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t6
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t6
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t6
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t6
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t7
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t7
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t7
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t7
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t7
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t7
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t7
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t7
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t8
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t8
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t8
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t8
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t8
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t8
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t8
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t8
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t9
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t9
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t9
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t9
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t9
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t9
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t9
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t9
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t10
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t10
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t10
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t10
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t10
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t10
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t10
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t10
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t11
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t11
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t11
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t11
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t11
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t11
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t11
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t11
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t12
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t12
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t12
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t12
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t12
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t12
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t12
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t12
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t13
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t13
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t13
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t13
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t13
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t13
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t13
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t13
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t14
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t14
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t14
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t14
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t14
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t14
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t14
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t14
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t15
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t15
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t15
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t15
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t15
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t15
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t15
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t15
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t16
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t16
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t16
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t16
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t16
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t16
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t16
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t16
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t17
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t17
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t17
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t17
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t17
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t17
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t17
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t17
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t18
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t18
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t18
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t18
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t18
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t18
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t18
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t18
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t19
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t19
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t19
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t19
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t19
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t19
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t19
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t19
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p0-a1-L50-20tps-t20
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 0
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p0-a1-L50-20tps-t20
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p20-a1-L50-20tps-t20
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 20
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p20-a1-L50-20tps-t20
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p40-a1-L50-20tps-t20
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 40
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p40-a1-L50-20tps-t20
+        targetPeers: ['peer0.hospital1.com']
+  - label: E5-deltackpt-p100-a1-L50-20tps-t20
+    txNumber: 200
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 20
+    workload:
+      module: caliper/benchmarks/callbacks/contention.js
+      arguments:
+        strategy: deltackpt
+        partitions: 100
+        actors: 1
+        limit: 50
+        bucketSecs: 0
+        tag: E5-deltackpt-p100-a1-L50-20tps-t20
+        targetPeers: ['peer0.hospital1.com']

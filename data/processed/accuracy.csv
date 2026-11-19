@@ -1,0 +1,8 @@
+exp,strategy,partitions,limit,trials,committed,admitted,admitted_ci95,over_admit,early_deny
+E4,deltarange,1,50,20,18.6,18.6,1.64,0.0,0.0
+E4,part,4,50,20,75.4,48.0,0.0,0.3,2.3
+E4,part,16,50,20,149.1,48.0,0.0,6.65,8.65
+E4,part,32,50,20,164.15,31.95,0.1,4.75,21.95
+E4,partceil,16,50,20,152.25,63.95,0.1,17.85,3.9
+E4,partsum,16,50,20,18.75,18.75,2.03,0.0,0.0
+E4,single,1,50,20,18.5,18.5,1.57,0.0,0.0
