@@ -84,4 +84,4 @@ Code: MIT (see `LICENSE`). Data in `data/` and figures: CC BY 4.0.
 
 ## Contact
 
-Fahima Khalil — f.khalil@bsu.edu.eg
+Fahima Khalil — engfahimakhalil@gmail.com
