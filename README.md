@@ -1,8 +1,8 @@
-# Hot-key contention in rate-limited access control on Hyperledger Fabric
+﻿# Hot-key contention in rate-limited access control on Hyperledger Fabric
 
 Code, raw data and analysis for the paper:
 
-> F. Khalil, S. Abdelgaber, E. M. Shaaban, "Hot-Key Contention in Rate-Limited Access Control on Permissioned Blockchains: A Block-Occupancy Model and the Commit–Accuracy Trade-off" (manuscript under preparation).
+> F. Khalil, S. Abdelgaber, E. Shaaban, "Hot-Key Contention in Rate-Limited Access Control on Permissioned Blockchains: A Block-Occupancy Model and the Commitâ€“Accuracy Trade-off" (manuscript under preparation).
 
 A per-user request counter, as used to rate-limit break-glass (emergency) access to electronic health records, becomes a hot key on an execute-order-validate blockchain: concurrent requests read the same version and all but one per block fail with `MVCC_READ_CONFLICT`. This repository holds the chaincode with six counter designs, the Caliper workloads, the raw logs of all 1,500 benchmark rounds (876,000 client calls, 20 trials per configuration), and the scripts that rebuild every table and figure of the paper.
 
@@ -10,14 +10,14 @@ A per-user request counter, as used to rate-limit break-glass (emergency) access
 
 ```
 chaincode/bgac-contention/   Go chaincode for Fabric 1.4 (six counter designs) + unit tests
-caliper/                     Caliper 0.5 workload (contention.js) and benchmark configs E1–E5
+caliper/                     Caliper 0.5 workload (contention.js) and benchmark configs E1â€“E5
 scripts/                     deploy, run and export scripts; analysis (analyze, model, accuracy)
 analysis/                    rounds.py, figure scripts (figs.py, fig6.py)
 data/raw/caliper-logs/       Caliper console logs, one per experiment part (gzip)
-data/raw/caliper-reports/    Caliper HTML reports that were kept (E1b–E1d)
+data/raw/caliper-reports/    Caliper HTML reports that were kept (E1bâ€“E1d)
 data/raw/ledger-logs/E4|E5/  committed request logs exported from the ledger, one JSON per round
 data/processed/              rounds.csv, per-configuration cells, model fit, accuracy tables
-figures/                     Figures 1–6 as in the manuscript (PNG 300 dpi + PDF)
+figures/                     Figures 1â€“6 as in the manuscript (PNG 300 dpi + PDF)
 reproduce.sh                 rebuilds data/processed and figures from data/raw
 ```
 
@@ -26,8 +26,8 @@ reproduce.sh                 rebuilds data/processed and figures from data/raw
 | Design (`strategy`) | Reads | Writes | Admission rule |
 |---|---|---|---|
 | `single` | the actor's counter key | the same key | exact |
-| `part` | one partition (hash of tx ID) | the same partition | partition count < ⌊L/N⌋ (approximate) |
-| `partceil` | one partition | the same partition | partition count < ⌈L/N⌉ (approximate) |
+| `part` | one partition (hash of tx ID) | the same partition | partition count < âŒŠL/NâŒ‹ (approximate) |
+| `partceil` | one partition | the same partition | partition count < âŒˆL/NâŒ‰ (approximate) |
 | `partsum` | all N partitions | own partition | sum < L (exact) |
 | `deltarange` | range of the actor's delta keys | one new delta key | range count < L (exact) |
 | `deltawrite` | the actor's BLOCK flag only | one new delta key | not blocked (deferred) |
@@ -40,13 +40,13 @@ Round label: `<exp>-<strategy>-p<N>-a<actors>-L<limit>-<load>tps-t<trial>` (limi
 
 | Exp | Question | Varies | Rounds |
 |---|---|---|---|
-| E1 | goodput of each design | 5 designs × load 5/10/20/50/100 tx/s | 500 |
-| E2 | partitions | N = 1…64 × load 5/20/50 tx/s | 420 |
-| E3 | actors | 1/3/10 actors × single/part/deltawrite × load 20/50 tx/s | 360 |
+| E1 | goodput of each design | 5 designs Ã— load 5/10/20/50/100 tx/s | 500 |
+| E2 | partitions | N = 1â€¦64 Ã— load 5/20/50 tx/s | 420 |
+| E3 | actors | 1/3/10 actors Ã— single/part/deltawrite Ã— load 20/50 tx/s | 360 |
 | E4 | enforcement accuracy | 7 design/N settings, 200 requests at 20 tx/s, limit 50 | 140 |
 | E5 | deferred enforcement | monitor every K = none/20/40/100 calls, limit 50 | 80 |
 
-Ledger growth filled the VM disk, so E1 was run in four parts (trials 1–7, 8–14, 15–17, 18–20; logs `E1a`–`E1d`) and E3 in two (trials 1–10, 11–20), with the network rebuilt between parts. The labels keep the global trial number, so the analysis merges the parts. The E4 log and ledger export carry the run ID `pilot`; they are the full 20-trial E4 run used in the paper.
+Ledger growth filled the VM disk, so E1 was run in four parts (trials 1â€“7, 8â€“14, 15â€“17, 18â€“20; logs `E1a`â€“`E1d`) and E3 in two (trials 1â€“10, 11â€“20), with the network rebuilt between parts. The labels keep the global trial number, so the analysis merges the parts. The E4 log and ledger export carry the run ID `pilot`; they are the full 20-trial E4 run used in the paper.
 
 A round is **degraded** when Caliper's achieved send rate fell below 90% of the offered load (a client or VM stall). `cells_all.csv` keeps every round; `cells_clean.csv` excludes degraded rounds. Both are reported.
 
@@ -84,4 +84,4 @@ Code: MIT (see `LICENSE`). Data in `data/` and figures: CC BY 4.0.
 
 ## Contact
 
-Fahima Khalil — f.khalil@bsu.edu.eg
+Fahima Khalil â€” f.khalil@bsu.edu.eg
